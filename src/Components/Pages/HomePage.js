@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import Header from '../Header/Header'
 import './HomePage.css'
 
 export default class HomePage extends Component {
@@ -21,7 +22,10 @@ export default class HomePage extends Component {
 
   render () {
     return (
-       <h1>Hi</h1>
+       <div className="homepage-wrap">
+         <Header />
+         <h1>This is an h1</h1>
+         </div>
     )
   }
 }

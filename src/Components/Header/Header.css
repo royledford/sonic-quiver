@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 35px;
+}
+
+.header-menu-icon {
+  width: 26px;
+  height: 17px;
+}
