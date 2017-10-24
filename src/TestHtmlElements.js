@@ -162,7 +162,7 @@ const TestHtmlElements = () => {
 			</form>
 
 			<footer>
-				<p>Made to test <a href="https://taniarascia.github.io/primitive/" target="_blank">Primitive</a> by <a href="https://www.taniarascia.com">Tania Rascia</a>.</p>
+				<p>Made to test <a href="https://taniarascia.github.io/primitive/" target="_blank" rel="noopener noreferrer">Primitive</a> by <a href="https://www.taniarascia.com">Tania Rascia</a>.</p>
 			</footer>
 
 		</div>

@@ -1,38 +1,53 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import './SidebarMenu.css'
+import closeIcon from '../../img/close-menu-icon.svg'
 
 export default class SidebarMenu extends Component {
   static propTypes = {
-    onClick: PropTypes.func,
-    someProp: PropTypes.string,
-  }
-  static defaultProps = {
-    someProp: 'someValue',
+    closeMenu: PropTypes.func,
   }
 
-  constructor(props) {
-    super(props)
-    this.state = {
-      someState: true,
-    }
+
+  toggleNav = () => {
+    this.props.closeNav()
   }
 
   render() {
     return (
-      <nav className="sidebarmenu">
+      <nav
+        className={
+          'sidebarmenu ' + (this.props.showNav ? ' sidebarmenu-hidden' : '')
+        }
+      >
+      <div className="sidebarmenu-close-wrap" onClick={this.toggleNav}>
+        <img
+          className="sidebarmenu-icon"
+          src={closeIcon}
+          onClick={this.toggleNav}
+          alt="Menu"
+        />
+        </div>
         <ul className="sidebarmenu-list">
           <li className="sidebarmenu-item">
-            <a href="/library" className="sidebarmenu-link">Library</a>
+            <a href="/library" className="sidebarmenu-link">
+              Library
+            </a>
           </li>
           <li className="sidebarmenu-item">
-            <a href="/recents" className="sidebarmenu-link">Recent Work</a>
+            <a href="/recents" className="sidebarmenu-link">
+              Recent Work
+            </a>
           </li>
           <li className="sidebarmenu-item">
-            <a href="/worldwide" className="sidebarmenu-link">Worldwide</a>
+            <a href="/worldwide" className="sidebarmenu-link">
+              Worldwide
+            </a>
           </li>
           <li className="sidebarmenu-item">
-            <a href="/about" className="sidebarmenu-link">About</a>
+            <a href="/about" className="sidebarmenu-link">
+              About
+            </a>
           </li>
         </ul>
       </nav>
