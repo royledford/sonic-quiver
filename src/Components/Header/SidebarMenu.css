@@ -6,11 +6,16 @@
   background-color: rgba(248, 172, 65, 0.92);
   height: 100%;
   padding: 0;
-  transition: right 250ms;
-  text-align: right; }
+  text-align: right;
+  transition: right 250ms ease-out; }
 
 .sidebarmenu-hidden {
   right: -188px; }
+
+.sidebarmenu-list {
+  list-style: none;
+  text-align: right;
+  padding-right: 28px; }
 
 .sidebarmenu-close-wrap {
   position: relative;
@@ -24,11 +29,6 @@
   width: 20px;
   margin-bottom: 44px; }
 
-.sidebarmenu-list {
-  list-style: none;
-  text-align: right;
-  padding-right: 28px; }
-
 .sidebarmenu-link {
   font-size: 20px;
   font-weight: bold;
@@ -36,7 +36,18 @@
   color: white; }
 
 .sidebarmenu-item {
-  height: 50px; }
+  position: relative;
+  right: 0;
+  height: 50px;
+  width: 160px;
+  overflow: hidden;
+  transition: all 1250ms ease-out;
+  transition-delay: 250ms;
+  white-space: nowrap; }
+
+.sidebarmenu-item-hidden {
+  width: 0;
+  right: -188px; }
 
 .sidebarmenu-item a {
   display: block;
@@ -53,3 +64,14 @@
 
 .sidebarmenu-link:active {
   color: white; }
+
+.sidebarmenu-cache {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  visibility: visible; }
+
+.sidebarmenu-cache-hidden {
+  visibility: hidden; }

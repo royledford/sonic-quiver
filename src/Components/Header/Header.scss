@@ -3,10 +3,26 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-  padding: 35px;
+  // padding: 35px;
+}
+
+.header-logo {
+  position: relative;
+  top: 10px;
+  padding: 0 0 0 35px;
+
+}
+
+.header-icon-wrap {
+  position: relative;
+  height: 80px;
+  width: 80px;
+  padding: 35px 35px 0 0;
+  cursor: pointer;
 }
 
 .header-menu-icon {
+  position: relative;
   width: 26px;
   height: 17px;
   cursor: pointer;
