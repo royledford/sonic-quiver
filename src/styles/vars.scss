@@ -21,7 +21,26 @@ h6 {
 $white: #fff;
 
 $orange-base: #e6b380;
+$orange-dark: #C26B15;
 $orange-trans: rgba(248, 172, 65, 0.92);
 
 $link-smalltext: rgba(255, 255, 255, 0.6);
 $link-largetext: rgba(170, 118, 44, 0.2);
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: $orange-dark;
+  font-weight: bold;
+}
+
+a:active {
+  color: white;
+}

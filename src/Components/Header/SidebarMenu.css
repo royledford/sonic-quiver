@@ -12,6 +12,20 @@ h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: 600; }
 
+a:link {
+  color: white;
+  text-decoration: none; }
+
+a:visited {
+  color: white; }
+
+a:hover {
+  color: #C26B15;
+  font-weight: bold; }
+
+a:active {
+  color: white; }
+
 @media only screen and (min-width: 801px) {
   .sidebarmenu {
     display: none; } }
