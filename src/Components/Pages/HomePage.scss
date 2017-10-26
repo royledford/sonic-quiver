@@ -1,0 +1,10 @@
+@import "styles/vars.scss";
+
+.homepage-wrap {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: $orange-base;
+  background-image: url('../../img/home-bg.jpg');
+  background-size: cover;
+}

@@ -1,0 +1,7 @@
+.homepage-wrap {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #E6B380;
+  background-image: url("../../img/home-bg.jpg");
+  background-size: cover; }
