@@ -5,28 +5,26 @@ import './HomePage.css'
 
 export default class HomePage extends Component {
   static propTypes = {
-      onClick: PropTypes.func,
-      someProp: PropTypes.string,
-   }
-   static defaultProps = {
-      someProp: 'someValue',
+    onClick: PropTypes.func,
+    someProp: PropTypes.string,
+  }
+  static defaultProps = {
+    someProp: 'someValue',
+  }
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      someState: true,
     }
-
-   constructor (props) {
-     super(props)
-     this.state = {
-       someState: true,
-      }
-   }
+  }
 
 
-  render () {
+  render() {
     return (
-       <div className="homepage-wrap">
-         <Header />
-         <h1>This is an h1</h1>
-         </div>
+      <div className="homepage-wrap">
+        <Header />
+      </div>
     )
   }
 }
-
