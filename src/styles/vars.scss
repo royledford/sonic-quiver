@@ -1,6 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600,700,900|Sintony:400,700');
+
+$font-body: 'Sintony', sans-serif;
+$font-headline: 'Montserrat', sans-serif;
+
+body {
+  font-family: $font-body;
+  line-height: 1.4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-headline;
+  font-weight: 600;
+}
+
 $white: #fff;
 
-$orange-base: #E6B380;
+$orange-base: #e6b380;
 $orange-trans: rgba(248, 172, 65, 0.92);
 
 $link-smalltext: rgba(255, 255, 255, 0.6);

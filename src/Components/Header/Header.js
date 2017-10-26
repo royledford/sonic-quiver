@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import Logo from '../common/Logo'
 import NaviLink from './NaviLink'
 // import SidebarMenu from './SidebarMenu'
@@ -24,7 +25,9 @@ export default class Header extends Component {
       <div>
         <header className="header">
           <div className="header-logo">
+            <Link to="/">
             <Logo width={162} fill="#fff" />
+            </Link>
           </div>
           <nav className="header-nav">
             <NaviLink
