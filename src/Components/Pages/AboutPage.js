@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import Header from '../Header/Header'
 import FaFacebook from 'react-icons/lib/fa/facebook'
 import FaTwitter from 'react-icons/lib/fa/twitter'
-import FaEnvelopeO from 'react-icons/lib/fa/envelope-o'
+// import FaEnvelopeO from 'react-icons/lib/fa/envelope-o'
 import MdClear from 'react-icons/lib/md/clear'
 import './AboutPage.css'
 

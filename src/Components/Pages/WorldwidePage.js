@@ -1,13 +1,20 @@
 import React, { Component } from 'react'
 import Header from '../Header/Header'
-import './HomePage.css'
+import './WorldwidePage.css'
 
-export default class HomePage extends Component {
+export default class WorldwidePage extends Component {
   render() {
     return (
-      <div className="homepage-wrap">
+      <div className="worldwidepage-wrap">
         <Header />
-        <h1 className="homepage-lead">Production Music Library</h1>
+        <div className="worldwidepage-content">
+          <div className="worldwidepage-list">
+            <p>list</p>
+          </div>
+          <div className="worldwidepage-detail">
+            <p>detail</p>
+          </div>
+        </div>
       </div>
     )
   }
