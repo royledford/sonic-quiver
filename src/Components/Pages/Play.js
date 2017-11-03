@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import Eq from '../../Components/Eq/Eq'
 import NaviLink from '../Header/NaviLink'
+import AgentSmall from '../Agents/AgentSmall'
+import AgentList from '../Agents/AgentList'
+import AgentDetail from '../Agents/AgentDetail'
 
 export default class Play extends Component {
   render() {
@@ -8,11 +11,42 @@ export default class Play extends Component {
       <div>
         <div
           style={{
-            position: "flex",
-            justifyContent: "space-evenly",
+            position: 'relative',
+            height: 600,
+            backgroundColor: 'olive',
+            padding: '10px 0 0 150px',
+            borderBottom: '1px solid white',
+          }}
+        >
+          <AgentDetail />
+        </div>
+        <div
+          style={{
+            position: 'relative',
+            height: 400,
+            backgroundColor: 'olive',
+            padding: '75px 0 0 150px',
+            borderBottom: '1px solid white',
+          }}
+        >
+          <AgentList />
+        </div>
+        <div
+          style={{
+            height: 300,
+            backgroundColor: 'olive',
+            padding: '75px 0 0 150px',
+          }}
+        >
+          <AgentSmall location="USA" companyName="Five Alarm" agentName="Cassie Lourdes" />
+        </div>
+        <div
+          style={{
+            position: 'flex',
+            justifyContent: 'space-evenly',
             height: 300,
             backgroundColor: '#E6B380',
-            padding: "75px 0 0 150px"
+            padding: '75px 0 0 150px',
           }}
         >
           <NaviLink

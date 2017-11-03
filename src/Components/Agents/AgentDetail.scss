@@ -1,0 +1,48 @@
+@import 'styles/vars.scss';
+
+.agentdetail-wrap {
+  position: relative;
+  width: 636px;
+  height: 500px;
+  background-color: $worldwide-overlay;
+  border: 1px solid $white;
+  padding: 66px;
+  margin: 0 20px 0 0;
+  color: $white;
+}
+
+.agentdetail-country {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 3px 0;
+}
+
+.agentdetail-company {
+  margin: 58px 0 0 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.agentdetail-address {
+  margin: 25px 0 0 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.agentdetail-agent {
+  margin: 45px 0 0 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.agentdetail-url {
+  margin: 45px 0 0 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.agentdetail-rule {
+  height: 1px;
+  background-color: $white;
+  border-width: 0;
+}
