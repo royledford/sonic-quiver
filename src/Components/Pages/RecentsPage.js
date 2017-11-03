@@ -1,13 +1,17 @@
 import React, { Component } from 'react'
 import Header from '../Header/Header'
-import './HomePage.css'
+import './RecentsPage.css'
 
 export default class HomePage extends Component {
   render() {
     return (
-      <div className="homepage-wrap">
+      <div className="recents-wrap">
         <Header />
-        <h1 className="homepage-lead">Production Music Library</h1>
+        <div className="recents-content">
+          <div className="recents-list">
+            <p>list</p>
+          </div>
+        </div>
       </div>
     )
   }

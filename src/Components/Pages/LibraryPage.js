@@ -11,10 +11,8 @@ export default class HomePage extends Component {
           <div className="library-list">
             <p>list</p>
           </div>
-          <div className="library-detail">
-            <p>detail</p>
-          </div>
         </div>
-      </div>    )
+      </div>
+    )
   }
 }
