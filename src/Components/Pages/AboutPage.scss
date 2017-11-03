@@ -1,0 +1,81 @@
+@import 'styles/vars.scss';
+
+.aboutpage-wrap {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  background-color: $orange-base;
+  background-image: url('../../img/about-bg.jpg');
+  background-size: cover;
+
+  overflow: hidden;
+}
+
+.aboutpage-topspacer {
+  position: relative;
+  height: 10%;
+}
+
+.aboutpage-row {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  height: 100%;
+  overflow: hidden;
+  color: $white;
+  font-size: 14px;
+}
+
+.aboutpage-text {
+  position: relative;
+  max-width: 666px;
+  height: 50%;
+  overflow: hidden;
+  overflow-y: scroll;
+
+  padding: 40px;
+  margin: 0 0 0 24px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.aboutpage-contact {
+  max-width: 266px;
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 50%;
+  margin: 0 24px 0 0;
+  padding: 40px 40px 40px 0;;
+}
+
+.aboutpage-social {
+  display: flex;
+  flex-direction: column;
+  color: $white;
+
+  margin: 0 24px 0 0;
+  padding: 48px 0 0 0;
+  font-size: 24px;
+}
+
+.aboutpage-icon {
+  margin: 0 0 24px 0;
+}
+
+.aboutpage-social a:link {
+  color: white;
+}
+
+.aboutpage-social a:visited {
+  color: white;
+}
+
+.aboutpage-social a:hover {
+  color: $orange-dark;
+  font-weight: bold;
+}
+
+.aboutpage-social a:active {
+  color: white;
+}

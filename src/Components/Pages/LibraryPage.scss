@@ -1,0 +1,29 @@
+@import 'styles/vars.scss';
+
+.library-wrap {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: $library-background;
+  background-image: url('../../img/library-bg.jpg');
+  background-size: cover;
+  overflow: hidden;
+}
+
+.library-content {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.library-list {
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  height: 600px;
+  background-color: $library-overlay;
+}
+
