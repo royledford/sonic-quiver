@@ -1,22 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:600,700,900|Sintony:400,700');
-
-$font-body: 'Sintony', sans-serif;
-$font-headline: 'Montserrat', sans-serif;
-
-body {
-  font-family: $font-body;
-  line-height: 1.4;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $font-headline;
-  font-weight: 600;
-}
 
 $white: #fff;
 
@@ -26,21 +7,3 @@ $orange-trans: rgba(248, 172, 65, 0.92);
 
 $link-smalltext: rgba(255, 255, 255, 0.6);
 $link-largetext: rgba(170, 118, 44, 0.2);
-
-a:link {
-  color: white;
-  text-decoration: none;
-}
-
-a:visited {
-  color: white;
-}
-
-a:hover {
-  color: $orange-dark;
-  font-weight: bold;
-}
-
-a:active {
-  color: white;
-}
