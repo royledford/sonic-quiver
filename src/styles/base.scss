@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:600,700,900|Sintony:400,700');
-
-$font-body: 'Sintony', sans-serif;
-$font-headline: 'Montserrat', sans-serif;
+@import 'styles/vars.scss';
 
 body {
   font-family: $font-body;

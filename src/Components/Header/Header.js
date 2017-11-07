@@ -19,10 +19,8 @@ export default class Header extends Component {
   }
 
   render() {
-    // const { navVisible } = this.state
 
     return (
-      <div>
         <header className="header">
           <div className="header-logo">
             <Link to="/">
@@ -61,7 +59,6 @@ export default class Header extends Component {
             />
           </nav>
         </header>
-      </div>
     )
   }
 }

@@ -1,0 +1,40 @@
+@import 'styles/vars.scss';
+
+.agentsmall-wrap {
+  position: relative;
+  max-width: 636px;
+  height: 80px;
+  padding: 20px 20px 10px 20px;
+  color: $white;
+  direction: ltr;
+  transition: all 250ms ease-out;
+  // Stop the contents from moving when the border is added.
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.agentsmall-wrap:hover {
+  background-color: $worldwide-overlay;
+  border: 1px solid $white;
+  transition: all 450ms ease-in-out;
+}
+
+.agentsmall-location {
+  letter-spacing: 3px;
+  position: relative;
+  padding: 0;
+  margin: 0 0 4px 0;
+  font-size: 16px;
+}
+
+.agentsmall-company {
+  position: relative;
+  padding: 0;
+  margin: 6px 0 0 0;
+  font-size: 12px;
+}
+
+.agentsmall-rule {
+  height: 1px;
+  background-color: rgba(255,255,255,0.3);
+  border-width: 0;
+}
