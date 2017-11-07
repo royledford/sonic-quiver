@@ -4,12 +4,24 @@ import NaviLink from '../Header/NaviLink'
 import AgentSmall from '../Agents/AgentSmall'
 import AgentList from '../Agents/AgentList'
 import AgentDetail from '../Agents/AgentDetail'
+import YouTubeSmall from '../YouTube/YouTubeSmall'
 
 export default class Play extends Component {
   render() {
     return (
       <div>
         <div
+        style={{
+          position: 'relative',
+          height: 600,
+          backgroundColor: 'olive',
+          padding: '10px 0 0 150px',
+          borderBottom: '1px solid white',
+        }}
+      >
+        <YouTubeSmall />
+      </div>
+      <div
           style={{
             position: 'relative',
             height: 600,
@@ -20,7 +32,7 @@ export default class Play extends Component {
         >
           <AgentDetail />
         </div>
-        <div
+      <div
           style={{
             position: 'relative',
             height: 400,

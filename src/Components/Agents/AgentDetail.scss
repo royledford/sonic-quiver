@@ -1,14 +1,16 @@
 @import 'styles/vars.scss';
 
 .agentdetail-wrap {
+  display: inline-block;
   position: relative;
   width: 636px;
-  height: 500px;
   background-color: $worldwide-overlay;
   border: 1px solid $white;
   padding: 66px;
-  margin: 0 20px 0 0;
   color: $white;
+  overflow: hidden;
+  overflow-y: scroll;
+  margin: 0 20px 0 0;
 }
 
 .agentdetail-country {

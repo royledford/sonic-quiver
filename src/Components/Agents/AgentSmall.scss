@@ -7,7 +7,7 @@
   padding: 20px 20px 10px 20px;
   color: $white;
   direction: ltr;
-  transition: all 250ms ease-in-out;
+  transition: all 250ms ease-out;
   // Stop the contents from moving when the border is added.
   border: 1px solid rgba(0, 0, 0, 0);
 }
@@ -15,6 +15,7 @@
 .agentsmall-wrap:hover {
   background-color: $worldwide-overlay;
   border: 1px solid $white;
+  transition: all 450ms ease-in-out;
 }
 
 .agentsmall-location {
@@ -34,6 +35,6 @@
 
 .agentsmall-rule {
   height: 1px;
-  background-color: $white;
+  background-color: rgba(255,255,255,0.3);
   border-width: 0;
 }

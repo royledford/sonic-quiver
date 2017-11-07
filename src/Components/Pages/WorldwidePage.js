@@ -34,8 +34,9 @@ export default class WorldwidePage extends Component {
     return (
       <div className="worldwidepage-wrap">
         <Header />
-        <div>
-          <div className="worldwidepage-content">
+        <div className="worldwidepage-spacer">
+          </div>
+          <div className="worldwidpage-row">
             <AgentList data={agentList} onMouseEnter={this.handleAgentHover.bind(this)} />
             <AgentDetail
               country={currentAgent.shortCountry}
@@ -49,9 +50,9 @@ export default class WorldwidePage extends Component {
               email={currentAgent.email}
               url={currentAgent.url}
               urlDisplay={currentAgent.urlDisplay}
+              sonicUrl={currentAgent.sonicUrl}
             />
           </div>
-        </div>
       </div>
     )
   }

@@ -1,8 +1,9 @@
 import { agentData } from './agents'
+import {sortBy} from 'lodash'
 
 class AgentApi {
   static getAgents = () => {
-    return agentData
+    return  sortBy(agentData, 'sortString')
   }
 }
 

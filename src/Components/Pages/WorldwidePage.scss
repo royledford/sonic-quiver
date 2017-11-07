@@ -4,18 +4,24 @@
   position: absolute;
   height: 100%;
   width: 100%;
+
   background-color: $orange-base;
   background-image: url('../../img/agent-bg.jpg');
   background-size: cover;
   overflow: hidden;
 }
 
-.worldwidepage-content {
+.worldwidepage-spacer {
+  position: relative;
+  height: 25px;
+}
+
+.worldwidpage-row {
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
-  // height: 100%;
+  // align-items: center;
+  height: 60%;
 }
 
 .worldwidepage-list {

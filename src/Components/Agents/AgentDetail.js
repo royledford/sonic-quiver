@@ -14,7 +14,7 @@ export default class AgentDetail extends Component {
     fax: PropTypes.string,
     email: PropTypes.string,
     urlDisplay: PropTypes.string,
-    url: PropTypes.string,
+    sonicUrl: PropTypes.string,
   }
   static defaultProps = {
     country: '',
@@ -27,11 +27,11 @@ export default class AgentDetail extends Component {
     fax: '',
     email: '',
     urlDisplay: '',
-    url: '',
+    sonicUrl: '',
   }
 
   render() {
-    const { country, name, address1, address2, address3, agentName, phone, fax, email, urlDisplay, url } = this.props
+    const { country, name, address1, address2, address3, agentName, phone, fax, email, urlDisplay, sonicUrl } = this.props
 
     return (
       <div className="agentdetail-wrap">
@@ -56,7 +56,7 @@ export default class AgentDetail extends Component {
           <a href={`mailto:${email}`}>{email}</a>
         </div>
         <div className="agentdetail-url">
-          <a href={url} target="_blank" rel="noopener noreferrer">
+          <a href={sonicUrl} target="_blank" rel="noopener noreferrer">
             {urlDisplay}
           </a>
         </div>
