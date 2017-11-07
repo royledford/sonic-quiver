@@ -10,13 +10,13 @@
   overflow: hidden;
 }
 
-.recents-content {
+.recents-spacer {
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+  height: 25px;
 }
 
-
+.recents-content {
+  position: relative;
+  left: 35%;
+  // height: 100%;
+}
