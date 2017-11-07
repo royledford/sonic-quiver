@@ -1,0 +1,9 @@
+@import 'styles/vars.scss';
+
+.youtubelist-wrap {
+  position: relative;
+  height: 600px;
+  width: 840px;
+  overflow: hidden;
+  overflow-y: scroll;
+}

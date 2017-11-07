@@ -1,9 +1,10 @@
 import axios from 'axios'
 
+// Below is the youtube api call to get all the videos for a channel
+// 'https://www.googleapis.com/youtube/v3/search?order=date&part=snippet&channelId={channelId}&maxResults=25&key={apiKey}'
+
 const userid = 'UCn7F1oi1b5ErU1vfoxG5oyw'
 const apiKeyTest = 'AIzaSyAdJSRPEFVVWJUVbrUnpVEbjdRiYhe_j8g'
-const temp =
-  'https://www.googleapis.com/youtube/v3/search?order=date&part=snippet&channelId=UCn7F1oi1b5ErU1vfoxG5oyw&maxResults=25&key=AIzaSyDm7dVQ6MZpj0pzbb4Gwnh_So063jAP-Qc'
 
 const youtubeService = {
   getVideos: function() {

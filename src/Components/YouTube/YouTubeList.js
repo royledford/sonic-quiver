@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import youtubeService from '../../api/youtubeApi'
-import './YouTubeSmall.css'
+import YouTubeSmall from './YouTubeSmall'
+import './YouTubeList.css'
 
-export default class YouTubeSmall extends Component {
+export default class YouTubeList extends Component {
   static propTypes = {
     onClick: PropTypes.func,
     someProp: PropTypes.string,
@@ -16,6 +17,7 @@ export default class YouTubeSmall extends Component {
     super(props)
     this.state = {
       ytVids: [],
+      loading: false,
     }
 
     // youtubeService.getVideos()
@@ -28,22 +30,31 @@ export default class YouTubeSmall extends Component {
   }
 
   componentWillMount() {
+    this.setState({ loading: true })
     youtubeService.getVideos().then(vids => {
-      this.setState({ ytVids: vids.items })
+      this.setState({ ytVids: vids.items, loading: false })
+      console.log(this.state.ytVids)
     })
   }
 
-  componentDidMount = () => {}
+  componentDidMount = () => {
+    console.log(this.state.ytVids)
+  }
 
   render() {
     return (
-      <div>
-        {this.state.ytVids.map(vid =>
-        <div key={vid.id.videoId}>
-          <h4>{vid.snippet.title}</h4>
-          <p>{vid.snippet.description}</p>
-          <img src={vid.snippet.thumbnails.default.url} />
-        </div>
+      <div className="youtubelist-wrap">
+        {this.state.ytVids.map(
+          vid =>
+            vid.id.videoId ? (
+              <YouTubeSmall
+                key={vid.id.videoId}
+                id={vid.id.videoId}
+                title={vid.snippet.title}
+                description={vid.snippet.description}
+                thumbnailUrl={vid.snippet.thumbnails.high.url}
+              />
+            ) : null
         )}
       </div>
     )

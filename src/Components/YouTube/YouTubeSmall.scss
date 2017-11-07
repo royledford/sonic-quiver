@@ -1,0 +1,71 @@
+@import 'styles/vars.scss';
+
+.youtubesmall-wrap {
+  position: relative;
+  display: flex;
+  margin: 0 0 44px 0;
+}
+
+.youtubesmall-text {
+  display: inline-block;
+  position: relative;
+  width: 426px;
+  height: 300px;
+}
+
+.youtubesmall-title {
+  position: relative;
+  height: 37px;
+  border-bottom: 1px solid $white;
+  border-right: 1px solid $white;
+  padding: 0;
+  margin: 75px 25px 0 0;
+  color: $white;
+}
+
+.youtubesmall-description {
+  position: relative;
+  height: 139px;
+  border-right: 1px solid $white;
+  padding: 10px 0 0 0;
+  margin: 0 25px 0 0;
+
+  font-size: 14px;
+  color: $white;
+}
+
+.youtubesmall-vid-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.youtubesmall-img {
+  position: relative;
+  height: 360px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  color: $white;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.youtubesmall-img:hover {
+  opacity: .2;
+}
+
+.youtubesmall-img:hover ~ .youtubesmall-play {
+  opacity: 1;
+}
+
+.youtubesmall-play {
+  position: absolute;
+  font-size: 200px;
+  color: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 200ms ease-in-out;
+}
+
