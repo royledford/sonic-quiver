@@ -9,6 +9,7 @@ export default class YouTubeSmall extends Component {
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     thumbnailUrl: PropTypes.string.isRequired,
+
   }
 
   constructor(props) {
@@ -27,7 +28,9 @@ export default class YouTubeSmall extends Component {
           <p className="youtubesmall-description">{description}</p>
         </div>
         <div className="youtubesmall-vid-wrap">
-          <img className="youtubesmall-img" src={thumbnailUrl} alt={title} />
+          {/* <img className="youtubesmall-img" src={thumbnailUrl} alt={title} /> */}
+          <div className="youtubesmall-vid" style={{ backgroundImage:  `url("${thumbnailUrl}")`  }} />
+          <div className="youtubesmall-cover" />
           <FaPlayCircle className="youtubesmall-play" />
         </div>
       </div>
