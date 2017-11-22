@@ -1,6 +1,28 @@
 @import 'styles/vars.scss';
 
-.youtubelist-wrap {
+// .youtubelist-wrap {
+//   position: relative;
+//   background-color: rgba(0, 0, 0, 0.2);
+//   // height: 600px;
+//   // overflow: hidden;
+//   // overflow-y: scroll;
+// }
+
+// .youtubelist-list {
+//   position: relative;
+//   margin-left: 20vw;
+//   height: 600px;
+//   overflow: hidden;
+//   overflow-y: scroll;
+// }
+.youtubelist-row {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  margin: 0 50px 0 0;
+}
+
+.youtubelist-list {
   position: relative;
   height: 600px;
   // width: 1240px;

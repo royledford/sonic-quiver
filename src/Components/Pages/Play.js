@@ -4,8 +4,8 @@ import NaviLink from '../Header/NaviLink'
 import AgentSmall from '../Agents/AgentSmall'
 import AgentList from '../Agents/AgentList'
 import AgentDetail from '../Agents/AgentDetail'
-import YouTubeSmall from '../YouTube/YouTubeSmall'
-import YouTubeList from '../YouTube/YouTubeList'
+import YoutubeSmall from '../Youtube/YoutubeSmall'
+import YoutubeList from '../Youtube/YoutubeList'
 
 export default class Play extends Component {
   render() {
@@ -20,7 +20,7 @@ export default class Play extends Component {
             borderBottom: '1px solid white',
           }}
         >
-          <YouTubeSmall
+          <YoutubeSmall
             id="tzn-QhoE1RI"
             title="Sonic Quiver - INNOCENT MISCHIEF"
             description="Quirky orchestral comedy. Music by Michael Sims (PRS). Listen to full album at www.sonicquiver.com."
@@ -36,7 +36,7 @@ export default class Play extends Component {
             borderBottom: '1px solid white',
           }}
         >
-          <YouTubeList />
+          <YoutubeList />
         </div>
         <div
           style={{
