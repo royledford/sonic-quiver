@@ -1,0 +1,53 @@
+@import 'styles/vars.scss';
+
+.youtubelist-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  margin-left: 10%;
+}
+
+.youtubelist-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9998;
+}
+
+.youtubelist-videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  z-index: 9999;
+}
+
+.youtubelist-videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.youtubelist-centered {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.youtubelist-closeicon {
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  z-index: 9999;
+  pointer-events: none;
+}

@@ -23,10 +23,10 @@ export default class WorldwidePage extends Component {
     })
   }
 
-  handleAgentHover = (id) => {
+  handleAgentHover = id => {
     let agent = this.state.agentList.filter(agent => agent.id === id)
     if (agent.length > 0) agent = agent[0]
-    this.setState({currentAgent: agent})
+    this.setState({ currentAgent: agent })
   }
 
   render() {
@@ -34,25 +34,24 @@ export default class WorldwidePage extends Component {
     return (
       <div className="worldwidepage-wrap">
         <Header />
-        <div className="worldwidepage-spacer">
-          </div>
-          <div className="worldwidpage-row">
-            <AgentList data={agentList} onMouseEnter={this.handleAgentHover.bind(this)} />
-            <AgentDetail
-              country={currentAgent.shortCountry}
-              name={currentAgent.name}
-              address1={currentAgent.address1}
-              address2={currentAgent.address2}
-              address3={currentAgent.address3}
-              agentName={currentAgent.agentName}
-              phone={currentAgent.phone}
-              fax={currentAgent.fax}
-              email={currentAgent.email}
-              url={currentAgent.url}
-              urlDisplay={currentAgent.urlDisplay}
-              sonicUrl={currentAgent.sonicUrl}
-            />
-          </div>
+        <div className="worldwidepage-spacer" />
+        <div className="worldwidpage-row">
+          <AgentList data={agentList} onMouseEnter={this.handleAgentHover.bind(this)} />
+          <AgentDetail
+            country={currentAgent.shortCountry}
+            name={currentAgent.name}
+            address1={currentAgent.address1}
+            address2={currentAgent.address2}
+            address3={currentAgent.address3}
+            agentName={currentAgent.agentName}
+            phone={currentAgent.phone}
+            fax={currentAgent.fax}
+            email={currentAgent.email}
+            url={currentAgent.url}
+            urlDisplay={currentAgent.urlDisplay}
+            sonicUrl={currentAgent.sonicUrl}
+          />
+        </div>
       </div>
     )
   }

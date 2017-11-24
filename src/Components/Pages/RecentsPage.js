@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Header from '../Header/Header'
+import YoutubeList from '../Youtube/YoutubeList'
 import './RecentsPage.css'
 
 export default class HomePage extends Component {
@@ -7,10 +8,10 @@ export default class HomePage extends Component {
     return (
       <div className="recents-wrap">
         <Header />
+        <div className="recents-spacer" />
+
         <div className="recents-content">
-          <div className="recents-list">
-            <p>list</p>
-          </div>
+          <YoutubeList />
         </div>
       </div>
     )

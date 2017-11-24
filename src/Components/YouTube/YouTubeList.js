@@ -1,50 +1,78 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import youtubeService from '../../api/youtubeApi'
-import './YouTubeSmall.css'
+import YoutubeService from '../../api/youtubeApi'
+import YoutubeSmall from './YoutubeSmall'
+import YoutubePlayer from './YoutubePlayer'
+import './YoutubeList.css'
 
-export default class YouTubeSmall extends Component {
+export default class YoutubeList extends Component {
   static propTypes = {
     onClick: PropTypes.func,
     someProp: PropTypes.string,
-  }
-  static defaultProps = {
-    someProp: 'someValue',
   }
 
   constructor(props) {
     super(props)
     this.state = {
       ytVids: [],
+      loading: false,
+      videoToPlay: '',
+      videoTitle: '',
+      showVideo: false,
     }
-
-    // youtubeService.getVideos()
-    // .then(latestInvests => {
-    //   this.setState({
-    //     latestInvests: latestInvests.invests,
-    //     dataLoadFinished: true,
-    //   })
-    // })
+    this.handlePlayClicked = this.handlePlayClicked.bind(this)
   }
 
   componentWillMount() {
-    youtubeService.getVideos().then(vids => {
-      this.setState({ ytVids: vids.items })
+    this.setState({ loading: true })
+    YoutubeService.getVideos().then(vids => {
+      this.setState({ ytVids: vids.items, loading: false })
     })
   }
 
-  componentDidMount = () => {}
+  handlePlayClicked(id, title) {
+    this.setState({
+      videoToPlay: id,
+      videoTitle: title,
+      showVideo: true,
+    })
+  }
+
+  handlePlayerClosed = () => {
+    this.setState({
+      videoToPlay: '',
+      showVideo: false,
+    })
+  }
 
   render() {
+    const { videoToPlay, videoTitle, showVideo, ytVids } = this.state
     return (
-      <div>
-        {this.state.ytVids.map(vid =>
-        <div key={vid.id.videoId}>
-          <h4>{vid.snippet.title}</h4>
-          <p>{vid.snippet.description}</p>
-          <img src={vid.snippet.thumbnails.default.url} />
+      <div className="youtubelist-wrap">
+        <div className="youtubelist-row">
+          <div className="youtubelist-list">
+            {ytVids.map(
+              vid =>
+                vid.id.videoId ? (
+                  <YoutubeSmall
+                    key={vid.id.videoId}
+                    id={vid.id.videoId}
+                    title={vid.snippet.title}
+                    description={vid.snippet.description}
+                    thumbnailUrl={vid.snippet.thumbnails.high.url}
+                    playVideo={this.handlePlayClicked}
+                  />
+                ) : null
+            )}
+          </div>
         </div>
-        )}
+        <YoutubePlayer
+          videoId={videoToPlay}
+          title={videoTitle}
+          show={showVideo}
+          onBackgroundClick={this.handlePlayerClosed}
+          autoplay={1}
+        />
       </div>
     )
   }

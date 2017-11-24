@@ -16,7 +16,6 @@
   white-space: nowrap;
   letter-spacing: 2px;
   text-decoration: none;
-  z-index: 3;
 }
 
 .navilink-largeText {
@@ -32,7 +31,6 @@
   font-weight: 900;
 
   opacity: 0;
-  z-index: 1;
   pointer-events: none;
 }
 
@@ -50,7 +48,6 @@
 
   pointer-events: none;
   opacity: 0;
-  z-index: 2;
 }
 
 .navilink-link:hover ~ .navilink-largeText {
@@ -73,7 +70,6 @@
   color: white;
 }
 
-
 @keyframes showLinkText {
   0% {
     opacity: 0;
@@ -83,4 +79,3 @@
     left: -50px;
   }
 }
-

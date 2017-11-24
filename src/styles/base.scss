@@ -16,7 +16,6 @@ h6 {
   font-weight: 600;
 }
 
-
 a:link {
   color: white;
   text-decoration: none;
@@ -33,4 +32,17 @@ a:hover {
 
 a:active {
   color: white;
+}
+
+.ratio1-1:before {
+  padding-top: 100%;
+}
+.ratio2-1:before {
+  padding-top: 50%;
+}
+.ratio4-3:before {
+  padding-top: 75%;
+}
+.ratio16-9:before {
+  padding-top: 56.25%;
 }
