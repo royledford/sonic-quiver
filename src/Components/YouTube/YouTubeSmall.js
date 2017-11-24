@@ -23,12 +23,12 @@ export default class YoutubeSmall extends Component {
   render() {
     const { id, title, description, thumbnailUrl } = this.props
     return (
-      <div className="youtubesmall-wrap" key={id} onClick={this.playVideo}>
+      <div className="youtubesmall-wrap" key={id}>
         <div className="youtubesmall-text">
           <h4 className="youtubesmall-title">{title}</h4>
           <p className="youtubesmall-description">{description}</p>
         </div>
-        <div className="youtubesmall-vid-wrap">
+        <div className="youtubesmall-vid-wrap" onClick={this.playVideo}>
           <div className="youtubesmall-vid" style={{ backgroundImage: `url("${thumbnailUrl}")` }} />
           <div className="youtubesmall-cover" />
           <FaPlayCircle className="youtubesmall-play" />

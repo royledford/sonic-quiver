@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import CloseIcon from '../common/CloseIcon'
 import './YoutubePlayer.css'
 
 export default class YoutTubePlay extends Component {
@@ -83,6 +84,7 @@ export default class YoutTubePlay extends Component {
 
     return (
       <div className="youtubelist-video">
+        <CloseIcon className="youtubelist-closeicon" size={30} color="rgba(255, 255, 255, 1)" label="Close" />
         <div className="youtubelist-bg" onClick={onBackgroundClick} />
         <div className="youtubelist-videoWrapper youtubelist-centered">
           <iframe

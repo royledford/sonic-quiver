@@ -15,7 +15,8 @@
 
 .youtubesmall-title {
   position: relative;
-  height: 37px;
+  height: 47px;
+  text-align: bottom;
   border-bottom: 1px solid $white;
   border-right: 1px solid $white;
   padding: 0;
@@ -29,7 +30,6 @@
   border-right: 1px solid $white;
   padding: 10px 0 0 0;
   margin: 0 25px 0 0;
-
   font-size: 14px;
   color: $white;
 }
@@ -43,6 +43,7 @@
   width: 480px;
   height: 270px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .youtubesmall-cover {
