@@ -70,6 +70,17 @@
   color: white;
 }
 
+.navilink-active {
+  color: red;
+  font-weight: bold;
+}
+.navilink-active:before {
+  content: '\2022 ';
+}
+.navilink-active:after {
+  content: ' \2022';
+}
+
 @keyframes showLinkText {
   0% {
     opacity: 0;
