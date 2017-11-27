@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 import PropTypes from 'prop-types'
 import './NaviLink.css'
@@ -11,18 +11,19 @@ export default class NaviLink extends Component {
     linkText: PropTypes.string.isRequired,
     largeText: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
+    activeClassName: PropTypes.string,
   }
   static defaultProps = {
-    someProp: 'someValue',
+    activeClassName: '',
   }
 
   render() {
-    const { to, id, linkText, largeText, description } = this.props
+    const { to, id, linkText, largeText, description, activeClassName } = this.props
     return (
       <div className="navilink-wrap">
-        <Link to={to} id={id} className="navilink-link">
+        <NavLink to={to} id={id} className="navilink-link" activeClassName={activeClassName}>
           {linkText}
-        </Link>
+        </NavLink>
         <div id={`{id}-largeText`} className="navilink-largeText">
           {largeText}
         </div>

@@ -11,6 +11,7 @@ export default class Header extends Component {
     super(props)
     this.state = {
       navVisible: false,
+      activeLink: '',
     }
   }
 
@@ -19,46 +20,49 @@ export default class Header extends Component {
   }
 
   render() {
-
     return (
-        <header className="header">
-          <div className="header-logo">
-            <Link to="/">
+      <header className="header">
+        <div className="header-logo">
+          <Link to="/">
             <Logo width={162} fill="#fff" />
-            </Link>
-          </div>
-          <nav className="header-nav">
-            <NaviLink
-              to="/library"
-              id="library"
-              linkText="Library"
-              largeText="Library"
-              description="View the Sonic Quiver music library"
-            />
+          </Link>
+        </div>
+        <nav className="header-nav">
+          <NaviLink
+            to="/library"
+            id="library"
+            activeClassName="navilink-active"
+            linkText="Library"
+            largeText="Library"
+            description="View the Sonic Quiver music library"
+          />
 
-            <NaviLink
-              to="/worldwide"
-              id="library"
-              linkText="Worldwide"
-              largeText="Worldwide"
-              description="Contact a Sonic Quiver agent in your country"
-            />
-            <NaviLink
-              to="/recents"
-              id="recents"
-              linkText="Recent Work"
-              largeText="Recent"
-              description="See examples of our music in action"
-            />
-            <NaviLink
-              to="/about"
-              id="about"
-              linkText="About"
-              largeText="About"
-              description="Learn more about Sonic Quiver"
-            />
-          </nav>
-        </header>
+          <NaviLink
+            to="/worldwide"
+            id="library"
+            activeClassName="navilink-active"
+            linkText="Worldwide"
+            largeText="Worldwide"
+            description="Contact a Sonic Quiver agent in your country"
+          />
+          <NaviLink
+            to="/recents"
+            id="recents"
+            activeClassName="navilink-active"
+            linkText="Recent Work"
+            largeText="Recent"
+            description="See examples of our music in action"
+          />
+          <NaviLink
+            to="/about"
+            id="about"
+            activeClassName="navilink-active"
+            linkText="About"
+            largeText="About"
+            description="Learn more about Sonic Quiver"
+          />
+        </nav>
+      </header>
     )
   }
 }
