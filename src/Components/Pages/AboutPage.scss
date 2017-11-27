@@ -65,6 +65,7 @@
 
 .aboutpage-social a:link {
   color: white;
+  transition: all 200ms ease-in-out;
 }
 
 .aboutpage-social a:visited {
@@ -74,6 +75,7 @@
 .aboutpage-social a:hover {
   color: $orange-dark;
   font-weight: bold;
+  transition: all 200ms ease-in-out;
 }
 
 .aboutpage-social a:active {
