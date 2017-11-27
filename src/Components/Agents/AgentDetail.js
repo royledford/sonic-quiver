@@ -31,7 +31,20 @@ export default class AgentDetail extends Component {
   }
 
   render() {
-    const { country, name, address1, address2, address3, agentName, phone, fax, email, urlDisplay, sonicUrl } = this.props
+    const {
+      country,
+      name,
+      address1,
+      address2,
+      address3,
+      agentName,
+      phone,
+      fax,
+      email,
+      urlDisplay,
+      sonicUrl,
+    } = this.props
+    const faxDisplay = fax ? `FAX: ${fax}` : ''
 
     return (
       <div className="agentdetail-wrap">
@@ -46,12 +59,11 @@ export default class AgentDetail extends Component {
           {address3}
           <br />
         </div>
-        <div className="agentdetail-agent">
-          {agentName}
-          <br />
+        <div className="agentdetail-agent">{agentName}</div>
+        <div className="agentdetail-agentcontact">
           TEL: {phone}
-          <br />
-          FAX: {fax}
+          {fax && <br />}
+          {faxDisplay}
           <br />
           <a href={`mailto:${email}`}>{email}</a>
         </div>
