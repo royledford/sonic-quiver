@@ -72,3 +72,12 @@
 .library-link:active {
   color: white;
 }
+
+@media only screen and (max-width: 750px) {
+  .library-list {
+    margin: 0 auto;
+    padding: 20px;
+    width: 360px;
+    height: 390px;
+  }
+}
