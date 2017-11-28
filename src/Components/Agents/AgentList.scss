@@ -2,8 +2,13 @@
   display: inline-block;
   position: relative;
   width: 636px;
-  // height: 100%;
   overflow: hidden;
   overflow-y: scroll;
-  direction:rtl;
+  direction: rtl;
+}
+
+@media only screen and (max-width: 750px) {
+  .agentlist {
+    height: 40%;
+  }
 }
