@@ -18,7 +18,7 @@
   transition: all 450ms ease-in-out;
 }
 
-.agentsmall-location {
+.agentsmall-country {
   letter-spacing: 3px;
   position: relative;
   padding: 0;
@@ -26,7 +26,7 @@
   font-size: 16px;
 }
 
-.agentsmall-company {
+.agentsmall-copy {
   position: relative;
   padding: 0;
   margin: 6px 0 0 0;
@@ -35,6 +35,31 @@
 
 .agentsmall-rule {
   height: 1px;
-  background-color: rgba(255,255,255,0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   border-width: 0;
+}
+
+.agentsmall-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 750px) {
+  .agentsmall-wrap {
+    height: 250px;
+
+    background-color: $worldwide-overlay;
+    border: 1px solid $white;
+    border-bottom: none;
+  }
+
+  .agentsmall-mobile {
+    display: block;
+  }
+
+  .agentsmall-wrap:hover {
+    background-color: $worldwide-overlay;
+    border: 1px solid $white;
+    border-bottom: none;
+    transition: none;
+  }
 }

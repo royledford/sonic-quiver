@@ -5,10 +5,13 @@
   overflow: hidden;
   overflow-y: scroll;
   direction: rtl;
+  margin: 0 10px 0 0;
 }
 
 @media only screen and (max-width: 750px) {
   .agentlist {
-    height: 40%;
+    position: realtive;
+    width: auto;
+    margin: 0 5px;
   }
 }
