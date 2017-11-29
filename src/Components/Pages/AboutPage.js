@@ -5,7 +5,6 @@ import Header from '../Header/Header'
 import FaFacebook from 'react-icons/lib/fa/facebook'
 import FaTwitter from 'react-icons/lib/fa/twitter'
 import FaInstagram from 'react-icons/lib/fa/instagram'
-import MdClear from 'react-icons/lib/md/clear'
 
 import './AboutPage.css'
 
@@ -46,9 +45,6 @@ export default class AboutPage extends Component {
             </p>
           </div>
           <div className="aboutpage-social">
-            <Link to="/">
-              <MdClear className="aboutpage-icon" />
-            </Link>
             <a
               href="https://www.facebook.com/Sonic-Quiver-Music-34519582815/"
               target="_blank"
