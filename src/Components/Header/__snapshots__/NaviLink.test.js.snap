@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders 1`] = `
+<div
+  className="navilink-wrap"
+>
+  <a
+    aria-current={false}
+    className="navilink-link"
+    href="http:\\\\\\\\www.royledford.com"
+    id="ElementId"
+    onClick={[Function]}
+    style={undefined}
+  >
+    Test Link
+  </a>
+  <div
+    className="navilink-largeText"
+    id="{id}-largeText"
+  >
+    Big Text
+  </div>
+  <div
+    className="navilink-description"
+    id="{id}-description"
+  >
+    test description
+  </div>
+</div>
+`;

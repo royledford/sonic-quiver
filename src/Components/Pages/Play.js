@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Eq from '../../Components/Eq/Eq'
 import NaviLink from '../Header/NaviLink'
 import AgentSmall from '../Agents/AgentSmall'
 import AgentList from '../Agents/AgentList'
@@ -104,9 +103,6 @@ export default class Play extends Component {
             largeText="Library"
             description="Listen to the Sonic Quiver Library"
           />
-        </div>
-        <div>
-          <Eq width={400} height={100} />
         </div>
       </div>
     )

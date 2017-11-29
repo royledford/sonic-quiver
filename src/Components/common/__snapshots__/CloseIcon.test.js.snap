@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Close Icon renders 1`] = `
+<div
+  className=""
+>
+  <svg
+    aria-labelledby="test"
+    height={16}
+    viewBox="0 0 39 39"
+    width={16}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <title>
+      test
+    </title>
+    <g>
+      <line
+        stroke="#000"
+        strokeWidth={6}
+        x1="3"
+        x2="36"
+        y1="36"
+        y2="3"
+      />
+      <line
+        stroke="#000"
+        strokeWidth={6}
+        x1="36"
+        x2="3"
+        y1="36"
+        y2="3"
+      />
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Close Icon uses custom props 1`] = `
+<div
+  className="classname"
+>
+  <svg
+    aria-labelledby="test label"
+    height={16}
+    viewBox="0 0 39 39"
+    width={16}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <title>
+      test label
+    </title>
+    <g>
+      <line
+        stroke="#555"
+        strokeWidth={6}
+        x1="3"
+        x2="36"
+        y1="36"
+        y2="3"
+      />
+      <line
+        stroke="#555"
+        strokeWidth={6}
+        x1="36"
+        x2="3"
+        y1="36"
+        y2="3"
+      />
+    </g>
+  </svg>
+</div>
+`;

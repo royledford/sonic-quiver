@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders 1`] = `
+<div
+  className="youtubelist-wrap"
+>
+  <div
+    className="youtubelist-row"
+  >
+    <div
+      className="youtubelist-list"
+    />
+  </div>
+</div>
+`;

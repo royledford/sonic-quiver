@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AgentSmall renders 1`] = `
+<div
+  className="agentlist"
+>
+  <ul>
+    <div
+      className="agentsmall-wrap"
+      onMouseEnter={[Function]}
+    >
+      <h4
+        className="country"
+      >
+        USA
+      </h4>
+      <hr
+        className="agentsmall-rule"
+      />
+      <p
+        className="agentsmall-copy"
+      >
+        5 Alarm Music
+         - 
+        Cassie Lord
+      </p>
+      <div
+        className="agentsmall-mobile"
+      >
+        <p>
+          <a
+            href="mailto:cassie@5alarmmusic.com"
+          >
+            cassie@5alarmmusic.com
+          </a>
+        </p>
+        <a
+          href="http://5alarmmusic.com/music/sonic-quiver/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          5alarmmusic.com
+        </a>
+        <div
+          className="agentsmall-copy"
+        >
+          TEL: 
+          (626) 304-1698
+          <br />
+          FAX: (626) 795-2058
+        </div>
+        <div
+          className="agentsmall-copy"
+        >
+          35 West Dayton St.
+          <br />
+          Pasadena, CA 91105
+          <br />
+          
+          <br />
+        </div>
+      </div>
+    </div>
+  </ul>
+</div>
+`;
