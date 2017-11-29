@@ -17,9 +17,17 @@ export default class AgentList extends Component {
         <AgentSmall
           key={agent.id}
           id={agent.id}
-          location={agent.shortCountry}
+          country={agent.shortCountry}
           companyName={agent.name}
           agentName={agent.agentName}
+          address1={agent.address1}
+          address2={agent.address2}
+          address3={agent.address3}
+          phone={agent.phone}
+          fax={agent.fax}
+          email={agent.email}
+          urlDisplay={agent.urlDisplay}
+          sonicUrl={agent.sonicUrl}
           onMouseEnter={this.props.onMouseEnter}
         />
       )

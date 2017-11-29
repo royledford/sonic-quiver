@@ -1,31 +1,28 @@
 @import 'styles/vars.scss';
 
-// .youtubelist-wrap {
-//   position: relative;
-//   background-color: rgba(0, 0, 0, 0.2);
-//   // height: 600px;
-//   // overflow: hidden;
-//   // overflow-y: scroll;
-// }
+.youtubelist-wrap {
+  height: 100%;
+}
 
-// .youtubelist-list {
-//   position: relative;
-//   margin-left: 20vw;
-//   height: 600px;
-//   overflow: hidden;
-//   overflow-y: scroll;
-// }
 .youtubelist-row {
   display: flex;
   justify-content: flex-end;
   position: relative;
   margin: 0 50px 0 0;
+  height: 100%;
 }
 
 .youtubelist-list {
   position: relative;
-  height: 600px;
-  // width: 1240px;
+  height: 75%;
   overflow: hidden;
   overflow-y: scroll;
+}
+
+@media only screen and (max-width: 750px) {
+  .youtubelist-row {
+    justify-content: flex-start;
+    position: relative;
+    margin: 0 10px 0 10px;
+  }
 }

@@ -2,8 +2,7 @@
 
 .navilink-wrap {
   position: relative;
-  display: inline-block;
-  height: 28px;
+  // height: 28px;
 }
 
 .navilink-link {
@@ -71,7 +70,6 @@
 }
 
 .navilink-active {
-  color: red;
   font-weight: bold;
 }
 .navilink-active:before {
@@ -88,5 +86,44 @@
   100% {
     opacity: 1;
     left: -50px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .navilink-link {
+    padding: 10px 20px 10px 20px;
+    // background-color: red;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .header-nav {
+    text-align: right;
+  }
+  .navilink-wrap {
+    height: 75px;
+    // padding: 0;
+    // margin: 0;
+  }
+
+  .navilink-link {
+    font-size: 35px;
+    // padding: 50px 20px 10px 20px;
+  }
+  .navilink-link a {
+    display: block;
+  }
+
+  .navilink-active:before {
+    content: '';
+  }
+  .navilink-active:after {
+    content: '';
+  }
+  .navilink-link:hover ~ .navilink-largeText {
+    display: none;
+  }
+  .navilink-link:hover ~ .navilink-description {
+    display: none;
   }
 }

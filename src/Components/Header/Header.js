@@ -2,9 +2,12 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import Logo from '../common/Logo'
 import NaviLink from './NaviLink'
-// import SidebarMenu from './SidebarMenu'
+import FaBars from 'react-icons/lib/fa/bars'
+
+import SidebarMenu from './SidebarMenu'
 import './Header.css'
-// import menuIcon from '../../img/menu-icon.svg'
+import menuIcon from '../../img/menu-icon.svg'
+import closeIcon from '../../img/close-menu-icon.svg'
 
 export default class Header extends Component {
   constructor(props) {
@@ -20,6 +23,9 @@ export default class Header extends Component {
   }
 
   render() {
+    const { navVisible } = this.state
+    const navClassOverride = navVisible ? 'header-shownav' : 'header-hidenav'
+
     return (
       <header className="header">
         <div className="header-logo">
@@ -27,7 +33,7 @@ export default class Header extends Component {
             <Logo width={162} fill="#fff" />
           </Link>
         </div>
-        <nav className="header-nav">
+        <nav className={`header-nav ${navClassOverride}`}>
           <NaviLink
             to="/library"
             id="library"
@@ -36,7 +42,6 @@ export default class Header extends Component {
             largeText="Library"
             description="View the Sonic Quiver music library"
           />
-
           <NaviLink
             to="/worldwide"
             id="library"
@@ -61,22 +66,16 @@ export default class Header extends Component {
             largeText="About"
             description="Learn more about Sonic Quiver"
           />
+          <div className="header-closemenu">
+            <img src={closeIcon} onClick={this.toggleNav} alt="Menu" />
+          </div>{' '}
         </nav>
+        {/* <FaBars className="header-menu" /> */}
+        <div className="header-icon-wrap" onClick={this.toggleNav}>
+          <img className="header-menu-icon" src={menuIcon} alt="Menu" />
+        </div>
+        {/* <SidebarMenu navVisible={navVisible} closeNav={this.toggleNav} /> */}
       </header>
     )
   }
 }
-
-// {/* <div className="header-icon-wrap" onClick={this.toggleNav}>
-//             <img className="header-menu-icon" src={menuIcon} alt="Menu" />
-//           </div>
-//         <SidebarMenu navVisible={navVisible} closeNav={this.toggleNav} /> */}
-
-// {/* <div >
-//               <img
-//                 className="sidebarmenu-icon"
-//                 src={closeIcon}
-//                 onClick={this.toggleNav}
-//                 alt="Menu"
-//               />
-//             </div> */}

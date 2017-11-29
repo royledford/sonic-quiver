@@ -81,3 +81,48 @@
   pointer-events: none;
   transition: all 400ms ease-in-out;
 }
+
+@media only screen and (max-width: 750px) {
+  .youtubesmall-wrap {
+    display: block;
+  }
+
+  .youtubesmall-text {
+    width: auto;
+    height: 120px;
+  }
+
+  .youtubesmall-title {
+    margin: 15px 0 0 0;
+    border-right: none;
+  }
+
+  .youtubesmall-description {
+    height: auto;
+    padding: 10px 0 0 0;
+    margin: 0 0 20px 0;
+    border-right: none;
+  }
+
+  .youtubesmall-vid-wrap {
+    width: 320px;
+    height: 180px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .youtubesmall-vid {
+    width: 320px;
+    height: 180px;
+    left: 51px;
+  }
+
+  .youtubesmall-cover {
+    display: none;
+  }
+
+  .youtubesmall-play {
+    color: rgba(211, 127, 0, 1);
+    opacity: 1;
+  }
+}

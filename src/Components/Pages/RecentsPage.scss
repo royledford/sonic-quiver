@@ -1,5 +1,8 @@
 @import 'styles/vars.scss';
 
+.recents-content {
+  height: 100%;
+}
 .recents-wrap {
   position: absolute;
   height: 100%;
@@ -13,4 +16,7 @@
 .recents-spacer {
   position: relative;
   height: 25px;
+}
+
+@media only screen and (max-width: 750px) {
 }

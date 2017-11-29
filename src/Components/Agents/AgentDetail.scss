@@ -4,13 +4,17 @@
   display: inline-block;
   position: relative;
   width: 636px;
+  height: 80%;
+  max-height: 460px;
+
+  padding: 66px;
+  margin: 0 20px 0 0;
+
+  color: $white;
   background-color: $worldwide-overlay;
   border: 1px solid $white;
-  padding: 66px;
-  color: $white;
   overflow: hidden;
   overflow-y: scroll;
-  margin: 0 20px 0 0;
 }
 
 .agentdetail-country {
@@ -52,4 +56,29 @@
   height: 1px;
   background-color: $white;
   border-width: 0;
+}
+
+@media only screen and (max-width: 750px) {
+  .agentdetail-wrap {
+    position: fixed;
+    bottom: 0;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 10px;
+    height: 300px;
+    max-height: auto;
+    display: none;
+  }
+
+  .agentdetail-company {
+    margin: 12px 0 0 0;
+  }
+
+  .agentdetail-agent {
+    margin: 12px 0 0 0;
+  }
+
+  .agentdetail-url {
+    margin: 12px 0 0 0;
+  }
 }
