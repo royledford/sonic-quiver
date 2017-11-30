@@ -8,7 +8,6 @@ import './YoutubeList.css'
 export default class YoutubeList extends Component {
   static propTypes = {
     onClick: PropTypes.func,
-    someProp: PropTypes.string,
   }
 
   constructor(props) {

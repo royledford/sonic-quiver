@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AgentDetail renders 1`] = `
+<div
+  className="agentdetail-wrap"
+>
+  <div
+    className="agentdetail-country"
+  >
+    country name
+  </div>
+  <hr
+    className="agentdetail-rule"
+  />
+  <div
+    className="agentdetail-company"
+  >
+    
+  </div>
+  <div
+    className="agentdetail-address"
+  >
+    address 1
+    <br />
+    address 1
+    <br />
+    address 1
+    <br />
+  </div>
+  <div
+    className="agentdetail-agent"
+  >
+    agent name
+  </div>
+  <div
+    className="agentdetail-agentcontact"
+  >
+    TEL: 
+    phone
+    <br />
+    FAX: fax
+    <br />
+    <a
+      href="mailto:email"
+    >
+      email
+    </a>
+  </div>
+  <div
+    className="agentdetail-url"
+  >
+    <a
+      href="sonic url"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      url display
+    </a>
+  </div>
+</div>
+`;

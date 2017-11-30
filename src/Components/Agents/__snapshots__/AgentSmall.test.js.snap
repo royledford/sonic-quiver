@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AgentSmall renders 1`] = `
+<div
+  className="agentsmall-wrap"
+  onMouseEnter={[Function]}
+>
+  <h4
+    className="country"
+  >
+    country name
+  </h4>
+  <hr
+    className="agentsmall-rule"
+  />
+  <p
+    className="agentsmall-copy"
+  >
+    company
+     - 
+    agent name
+  </p>
+  <div
+    className="agentsmall-mobile"
+  >
+    <p>
+      <a
+        href="mailto:email"
+      >
+        email
+      </a>
+    </p>
+    <a
+      href="sonic url"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      url display
+    </a>
+    <div
+      className="agentsmall-copy"
+    >
+      TEL: 
+      phone
+      <br />
+      FAX: fax
+    </div>
+    <div
+      className="agentsmall-copy"
+    >
+      address 1
+      <br />
+      address 1
+      <br />
+      address 1
+      <br />
+    </div>
+  </div>
+</div>
+`;

@@ -4,11 +4,7 @@ import PropTypes from 'prop-types'
 const Logo = props => {
   return (
     <div style={{ width: props.width }}>
-      <svg
-        id="sq-logo"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1078.01 310.62"
-      >
+      <svg id="sq-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1078.01 310.62">
         <title>sq-logo</title>
         <g id="sq-logo-all" style={{ fill: props.fill }}>
           <g id="quiver">
@@ -42,6 +38,11 @@ const Logo = props => {
 Logo.PropTypes = {
   width: PropTypes.number,
   fill: PropTypes.string,
+}
+
+Logo.defaultProps = {
+  width: 32,
+  fill: '#555',
 }
 
 export default Logo
