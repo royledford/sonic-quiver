@@ -1,0 +1,91 @@
+@import 'styles/vars.scss';
+
+.youtubesmallloader-wrap {
+  position: relative;
+  display: flex;
+  margin: 0 0 44px 0;
+}
+
+.youtubesmallloader-text {
+  display: inline-block;
+  position: relative;
+  width: 426px;
+  height: 300px;
+  color: transparent;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.youtubesmallloader-title {
+  position: relative;
+  height: 47px;
+  text-align: bottom;
+  border-bottom: 1px solid $white;
+  border-right: 1px solid $white;
+  padding: 0;
+  margin: 75px 25px 0 0;
+}
+
+.youtubesmallloader-description {
+  position: relative;
+  height: 139px;
+  border-right: 1px solid $white;
+  padding: 10px 0 0 0;
+  margin: 0 25px 0 0;
+  font-size: 14px;
+}
+
+.youtubesmallloader-vid-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 480px;
+  height: 270px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.youtubesmallloader-vid {
+  position: absolute;
+  width: 480px;
+  height: 270px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 750px) {
+  .youtubesmallloader-wrap {
+    display: block;
+  }
+
+  .youtubesmallloader-text {
+    width: auto;
+    height: 120px;
+  }
+
+  .youtubesmallloader-title {
+    margin: 15px 0 0 0;
+    border-right: none;
+  }
+
+  .youtubesmallloader-description {
+    height: auto;
+    padding: 10px 0 0 0;
+    margin: 0 0 20px 0;
+    border-right: none;
+  }
+
+  .youtubesmallloader-vid-wrap {
+    width: 320px;
+    height: 180px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .youtubesmallloader-vid {
+    width: 320px;
+    height: 180px;
+    left: 51px;
+  }
+}
