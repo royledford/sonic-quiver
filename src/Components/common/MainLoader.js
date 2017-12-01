@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import TimelineLite from 'gsap/TimelineLite'
 import './MainLoader.css'
 
 export default class MainLoader extends Component {
