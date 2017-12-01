@@ -8,11 +8,23 @@ import AboutPage from './Components/Pages/AboutPage'
 import WorldwidePage from './Components/Pages/WorldwidePage'
 import LibraryPage from './Components/Pages/LibraryPage'
 import NotFound from './Components/Pages/NotFound'
+import MainLoader from './Components/common/MainLoader'
 
 import './App.css'
 
 class App extends Component {
+  state = { loading: true }
+  componentDidMount = () => {
+    // setTimeout(() => this.setState({ loading: false }), 1500)
+    this.setState({ loading: false })
+  }
   render() {
+    const { loading } = this.state
+
+    if (loading) {
+      return <MainLoader />
+    }
+
     return (
       <Router>
         <Switch>
@@ -22,6 +34,7 @@ class App extends Component {
           <Route exact path="/worldwide" component={WorldwidePage} />
           <Route exact path="/library" component={LibraryPage} />
           <Route exact path="/library" component={LibraryPage} />
+          <Route exact path="/loader" component={MainLoader} />
 
           <Route exact path="/play" component={Play} />
           <Route path="/t" component={NotFound} />

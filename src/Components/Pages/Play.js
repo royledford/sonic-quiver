@@ -6,11 +6,23 @@ import AgentDetail from '../Agents/AgentDetail'
 import YoutubeSmall from '../Youtube/YoutubeSmall'
 import YoutubeList from '../Youtube/YoutubeList'
 import CloseIcon from '../common/CloseIcon'
+import MainLoader from '../common/MainLoader'
 
 export default class Play extends Component {
   render() {
     return (
       <div>
+        <div
+          style={{
+            position: 'relative',
+            height: 600,
+            backgroundColor: 'olive',
+            padding: '10px 0 0 10px',
+            borderBottom: '1px solid white',
+          }}
+        >
+          <MainLoader />
+        </div>
         <div
           style={{
             position: 'relative',
